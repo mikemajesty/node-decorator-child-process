@@ -1,0 +1,20 @@
+{
+  "name": "node-decorator-child-process",
+  "version": "1.0.0",
+  "description": "node decorator child process",
+  "main": "dist/process.decorator.js",
+  "types": "dist/process.decorator.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colorette": "^2.0.20",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.7"
+  }
+}
