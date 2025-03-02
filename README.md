@@ -22,7 +22,7 @@ import { RunInNewProcess } from "node-decorator-child-process";
 
 ```ts
 import { Controller, Get } from '@nestjs/common';
-import { RunInNewThread } from 'node-decorator-child-process';
+import { RunInNewProcess } from 'node-decorator-child-process';
 
 @Controller()
 export class HealthController {
@@ -32,7 +32,7 @@ export class HealthController {
    *
    * @param {number} milliseconds - The time to block the thread in milliseconds.
    */
-  @RunInNewThread()
+  @RunInNewProcess()
   blockMainThread(milliseconds: number) {
     const start = Date.now();
     while (Date.now() - start < milliseconds) {
